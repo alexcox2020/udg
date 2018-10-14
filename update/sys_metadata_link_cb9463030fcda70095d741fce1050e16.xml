@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>abddb2bf0fd0230095d741fce1050e34</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_universal_dg_properties">
+    <x_snc_universal_dg_properties action="INSERT_OR_UPDATE">
+        <property_name>url_log_template</property_name>
+        <property_value>{&#13;
+  "template": [&#13;
+    "[ID] 115698253 [Rule] Internet access (NAT) [Service] HTTPS [Connection] TCP ${IP_RFC1918}:47368 -&gt;${URL_OBSERVABLE}:443 [Duration] 12 sec [Bytes] 1438/5086/6524 [Packets] 11/11/20",&#13;
+    "[ID] 166238253 [Rule] Internet access (NAT) [Service] HTTPS [Connection] TCP ${IP_RFC1918}:50348 -&gt;${URL_OBSERVABLE}:443 [Duration] 18 sec [Bytes] 1438/5086/6524 [Packets] 10/9/22",&#13;
+    "[ID] 167698253 [Rule] Internet access (NAT) [Service] HTTPS [Connection] TCP ${IP_RFC1918}:40354 -&gt;${URL_OBSERVABLE}:443 [Duration] 9 sec [Bytes] 1438/5086/6524 [Packets] 12/9/23"&#13;
+  ]&#13;
+}</property_value>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-09-09 10:21:20</sys_created_on>
+        <sys_id>abddb2bf0fd0230095d741fce1050e34</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-10-14 11:59:24</sys_updated_on>
+    </x_snc_universal_dg_properties>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-10-14 11:59:31</sys_created_on>
+        <sys_id>cb9463030fcda70095d741fce1050e16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2018-09-09 11:21:20</sys_name>
+        <sys_package display_value="Universal Demo Generator" source="x_snc_universal_dg">c0b9f17c37042300b3ac079754990ee9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Universal Demo Generator">c0b9f17c37042300b3ac079754990ee9</sys_scope>
+        <sys_update_name>sys_metadata_link_cb9463030fcda70095d741fce1050e16</sys_update_name>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-10-14 11:59:31</sys_updated_on>
+        <tablename>x_snc_universal_dg_properties</tablename>
+    </sys_metadata_link>
+</record_update>
