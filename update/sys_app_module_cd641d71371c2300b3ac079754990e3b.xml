@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Universal Demo Generator">192ec63037842300b3ac079754990e15</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Threat Lookups</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_snc_universal_dg_threat_lookup</name>
+        <order>200</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_snc_universal_dg.threat_lookup_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-09-02 21:29:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cd641d71371c2300b3ac079754990e3b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Threat Lookup</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Universal Demo Generator" source="x_snc_universal_dg">c0b9f17c37042300b3ac079754990ee9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Universal Demo Generator">c0b9f17c37042300b3ac079754990ee9</sys_scope>
+        <sys_update_name>sys_app_module_cd641d71371c2300b3ac079754990e3b</sys_update_name>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-09-09 17:58:39</sys_updated_on>
+        <timeline_page/>
+        <title>Threat Lookup</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

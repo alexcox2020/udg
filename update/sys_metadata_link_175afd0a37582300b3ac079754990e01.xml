@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>d313283937582300b3ac079754990e02</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_universal_dg_get_running_processes">
+    <x_snc_universal_dg_get_running_processes action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <affected_ci display_value="SAP-NY-02">4014e8100a0a0b9b001e4215e2ee505e</affected_ci>
+        <include_unix_processes>false</include_unix_processes>
+        <include_windows_processes>true</include_windows_processes>
+        <response/>
+        <short_description>SAP-NY-02</short_description>
+        <sn_sec_cmn_enrichment_data_mapping display_value="Running Processes - WMI Enrichment">572812840b202200263a089b37673ab9</sn_sec_cmn_enrichment_data_mapping>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-09-02 17:56:17</sys_created_on>
+        <sys_id>d313283937582300b3ac079754990e02</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-09-03 08:31:56</sys_updated_on>
+    </x_snc_universal_dg_get_running_processes>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-09-03 18:54:18</sys_created_on>
+        <sys_id>175afd0a37582300b3ac079754990e01</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2018-09-02 18:56:17</sys_name>
+        <sys_package display_value="Universal Demo Generator" source="x_snc_universal_dg">c0b9f17c37042300b3ac079754990ee9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Universal Demo Generator">c0b9f17c37042300b3ac079754990ee9</sys_scope>
+        <sys_update_name>sys_metadata_link_175afd0a37582300b3ac079754990e01</sys_update_name>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-09-03 18:54:18</sys_updated_on>
+        <tablename>x_snc_universal_dg_get_running_processes</tablename>
+    </sys_metadata_link>
+</record_update>

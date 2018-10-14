@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_snc_universal_dg_sightingsearch.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<style>
+DIV.main{
+	position:relative;
+	margin: 0 auto;
+    width: 1000px; 
+	margin-top:50px;
+	padding:15px;
+	}
+.blackBorder{
+	border:1px solid black;
+	}
+IMG.logo{
+	position:relative;
+	width:100px;
+	height:100px;
+	}
+DIV.sr_label{
+	position:relative;
+	left:130px;
+	top:-90px;
+	font-size:15pt;
+	
+	border:0px solid black;
+	}
+TH{
+	color:white;
+	background-color:DimGrey;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 3px;
+	}
+TABLE{
+	position:relative;
+	font-size:12pt;
+	}
+TD{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 3px;
+	}
+	
+TR{
+	border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-collapse: collapse;
+}
+</style>
+<g:evaluate var="jvar_search">
+          var search = RP.getParameterValue("search");
+          search;
+</g:evaluate>
+<g:evaluate var="jvar_sighting" jelly="true" object="true">
+	var gr = new GlideRecord("x_snc_universal_dg_logs");
+	gr.addQuery("observable_value",jelly.jvar_search);
+	gr.query();	
+	gr;
+</g:evaluate>
+	
+<div class="main blackBorder">
+	<img src="udg-logo.png" class="logo"/>
+	<div class="sr_label">Search results:</div>
+	
+		<table>
+			<tr><th>Timestamp</th><th>Message</th></tr>
+			<j:while test="${jvar_sighting.next()}">
+				<tr><td>${jvar_sighting.getValue('date')}</td><td>${jvar_sighting.getValue('message')}</td></tr>
+			</j:while>
+		</table>
+
+</div>
+</j:jelly>]]></html>
+        <name>sightingsearch</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-09-09 13:23:00</sys_created_on>
+        <sys_id>b3e7e3730f94230095d741fce1050e18</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_name>sightingsearch</sys_name>
+        <sys_package display_value="Universal Demo Generator" source="x_snc_universal_dg">c0b9f17c37042300b3ac079754990ee9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Universal Demo Generator">c0b9f17c37042300b3ac079754990ee9</sys_scope>
+        <sys_update_name>sys_ui_page_b3e7e3730f94230095d741fce1050e18</sys_update_name>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-09-09 15:45:13</sys_updated_on>
+    </sys_ui_page>
+</record_update>

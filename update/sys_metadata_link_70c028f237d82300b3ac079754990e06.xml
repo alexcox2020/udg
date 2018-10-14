@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>46d666ee37142300b3ac079754990efc</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_universal_dg_sighting_search">
+    <x_snc_universal_dg_sighting_search action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <link_url>http://samplurl.com</link_url>
+        <observable_value/>
+        <raw_data>{&#13;
+          "count": -1,&#13;
+          "data_format": "json",&#13;
+          "file_name": "",&#13;
+          "data": [&#13;
+            {&#13;
+              "host_count": 2,&#13;
+              "original_filename": "(unknown)",&#13;
+              "digsig_result": "Unsigned",&#13;
+              "product_version": "(unknown)",&#13;
+              "copied_mod_len": 30744,&#13;
+              "server_added_timestamp": "2018-08-30T15:27:47.717Z",&#13;
+              "facet_id": 339930,&#13;
+              "orig_mod_len": 30744,&#13;
+              "is_executable_image": false,&#13;
+              "is_64bit": true,&#13;
+              "md5": "104C3C69B9B5A139E091CFA438A5D141",&#13;
+              "event_partition_id": [&#13;
+                100630225485824&#13;
+              ],&#13;
+              "file_version": "(unknown)",&#13;
+              "signed": "Unsigned",&#13;
+              "company_name": "(unknown)",&#13;
+              "internal_name": "(unknown)",&#13;
+              "timestamp": "2018-08-30T15:27:47.717Z",&#13;
+              "cb_version": 612,&#13;
+              "os_type": "Linux",&#13;
+              "file_desc": "(unknown)",&#13;
+              "product_name": "(unknown)",&#13;
+              "last_seen": "2018-08-30T15:30:05.208Z",&#13;
+              "@timestamp": "2018-08-30T15:30:05.208Z",&#13;
+              "parent_name": "",&#13;
+              "childproc_count": "",&#13;
+              "parent_md5": "",&#13;
+              "host_type": "",&#13;
+              "cmdline": "",&#13;
+              "process_name": "",&#13;
+              "last_update": "",&#13;
+              "parent_pid": "",&#13;
+              "id": "",&#13;
+              "segment_id": "",&#13;
+              "comms_ip": "",&#13;
+              "unique_id": "",&#13;
+              "regmod_count": "",&#13;
+              "crossproc_count": "",&#13;
+              "start": "",&#13;
+              "filemod_count": "",&#13;
+              "modload_count": "",&#13;
+              "process_pid": "",&#13;
+              "process_md5": "",&#13;
+              "parent_unique_id": "",&#13;
+              "interface_ip": "",&#13;
+              "username": ""&#13;
+            }&#13;
+          ]&#13;
+        }</raw_data>
+        <short_description>Sample Response</short_description>
+        <sighting_count>3</sighting_count>
+        <sighting_search_query/>
+        <sightings_over_time>{ "1535641200000": 1}</sightings_over_time>
+        <sn_sec_cmn_sightings_search_config display_value="Default Search (UDG)">9ed9f28d0f04230095d741fce1050e47</sn_sec_cmn_sightings_search_config>
+        <source>Universal Demo Generator</source>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-09-05 11:28:35</sys_created_on>
+        <sys_id>46d666ee37142300b3ac079754990efc</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-09-05 20:16:56</sys_updated_on>
+    </x_snc_universal_dg_sighting_search>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-09-05 20:18:16</sys_created_on>
+        <sys_id>70c028f237d82300b3ac079754990e06</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2018-09-05 12:28:35</sys_name>
+        <sys_package display_value="Universal Demo Generator" source="x_snc_universal_dg">c0b9f17c37042300b3ac079754990ee9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Universal Demo Generator">c0b9f17c37042300b3ac079754990ee9</sys_scope>
+        <sys_update_name>sys_metadata_link_70c028f237d82300b3ac079754990e06</sys_update_name>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-09-05 20:18:16</sys_updated_on>
+        <tablename>x_snc_universal_dg_sighting_search</tablename>
+    </sys_metadata_link>
+</record_update>

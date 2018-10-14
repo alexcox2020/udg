@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>3e90f6e537d02300b3ac079754990ece</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_universal_dg_get_running_processes">
+    <x_snc_universal_dg_get_running_processes action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <affected_ci display_value="SAP AppSRV01">3a70f789c0a8ce010091b0ea635b982a</affected_ci>
+        <include_unix_processes>true</include_unix_processes>
+        <include_windows_processes>false</include_windows_processes>
+        <response>[{"userId":"0",&#13;
+"pid":"S",&#13;
+"ppid":"root-I am the king",&#13;
+"cpuUsage":"22342",&#13;
+"priority":"22340",&#13;
+"niceValue":"0",&#13;
+"virtualSize":"80",&#13;
+"memorySize":"0",&#13;
+"mwChan":"-",&#13;
+"state":"5908",&#13;
+"terminalId":"pipe_w",&#13;
+"runTime":"21:14",&#13;
+"command":"pts/0 00:00:00 sed"}]</response>
+        <short_description>SAP AppSRV01</short_description>
+        <sn_sec_cmn_enrichment_data_mapping display_value="Running Processes - POSIX Enrichment">2d7cf1760b532200263a089b37673abc</sn_sec_cmn_enrichment_data_mapping>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-09-02 09:35:08</sys_created_on>
+        <sys_id>3e90f6e537d02300b3ac079754990ece</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-09-03 08:28:52</sys_updated_on>
+    </x_snc_universal_dg_get_running_processes>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-09-03 18:54:18</sys_created_on>
+        <sys_id>475abd0a37582300b3ac079754990efd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2018-09-02 10:35:08</sys_name>
+        <sys_package display_value="Universal Demo Generator" source="x_snc_universal_dg">c0b9f17c37042300b3ac079754990ee9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Universal Demo Generator">c0b9f17c37042300b3ac079754990ee9</sys_scope>
+        <sys_update_name>sys_metadata_link_475abd0a37582300b3ac079754990efd</sys_update_name>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-09-03 18:54:18</sys_updated_on>
+        <tablename>x_snc_universal_dg_get_running_processes</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_element_activity">
+    <wf_element_activity action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <attributes/>
+        <base_provider display_value="Run Script">d0c7fe11eb013100fc5e8a7af106fee0</base_provider>
+        <category/>
+        <checked_out_by/>
+        <default_height/>
+        <default_width/>
+        <description/>
+        <image>images/heisenberg_icons/workflow_ie8/provider_runscript.png</image>
+        <input_meta>{"name":"Input","type":"DATA_OBJECT","properties":[{"name":"task_sys_id","type":"STRING","mandatory":false},{"name":"observable_ids","type":"STRING","mandatory":false},{"name":"parent_execution_id","type":"STRING","mandatory":false}]}</input_meta>
+        <input_process_script/>
+        <input_transform/>
+        <local_variables/>
+        <name>Sighting Search UDG</name>
+        <output_meta>{"name":"Output","type":"DATA_OBJECT","properties":[{"name":"response","type":"STRING"}]}</output_meta>
+        <output_process_script/>
+        <output_transform/>
+        <processing_script><![CDATA[siS = new enrichmentDemoUtils();
+activityOutput.response = siS.sightingsSearchSplunkObservableList(activityInput.task_sys_id,activityInput.observable_ids,activityInput.parent_execution_id,"http://ec2-52-24-79-182.us-west-2.compute.amazonaws.com:8000/");
+gs.info("[UDG] Info "+activityOutput.response);]]></processing_script>
+        <sample_payloads>{}</sample_payloads>
+        <short_description/>
+        <style/>
+        <sys_class_name>wf_element_activity</sys_class_name>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-08-21 13:49:29</sys_created_on>
+        <sys_id>53e7b17537842300b3ac079754990ec1</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Sighting Search UDG</sys_name>
+        <sys_package display_value="Universal Demo Generator" source="x_snc_universal_dg">c0b9f17c37042300b3ac079754990ee9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Universal Demo Generator">c0b9f17c37042300b3ac079754990ee9</sys_scope>
+        <sys_update_name>wf_element_activity_53e7b17537842300b3ac079754990ec1</sys_update_name>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-08-21 14:01:51</sys_updated_on>
+        <version_container_id>e98265e937882300b3ac079754990e81</version_container_id>
+    </wf_element_activity>
+    <sys_translated_text action="delete_multiple" query="documentkey=53e7b17537842300b3ac079754990ec1"/>
+    <wf_versionable action="INSERT_OR_UPDATE">
+        <checked_out/>
+        <checked_out_by/>
+        <published>false</published>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-08-21 13:49:29</sys_created_on>
+        <sys_id>9fe7b17537842300b3ac079754990ec1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-08-21 14:01:51</sys_updated_on>
+        <valid_from>2018-08-21 13:51:46</valid_from>
+        <valid_to/>
+        <version>4</version>
+        <version_container_id>e98265e937882300b3ac079754990e81</version_container_id>
+        <wf_element_definition display_value="Sighting Search UDG">53e7b17537842300b3ac079754990ec1</wf_element_definition>
+    </wf_versionable>
+    <wf_versionable action="update_multiple" query="version_container_id=e98265e937882300b3ac079754990e81^sys_id!=9fe7b17537842300b3ac079754990ec1^version&lt;4">
+        <published>false</published>
+    </wf_versionable>
+    <wf_activity action="update_multiple" is_dot_walk_query="true" query="workflow_version.published=true^activity_definition.version_container_id=e98265e937882300b3ac079754990e81">
+        <new_activity_definition>53e7b17537842300b3ac079754990ec1</new_activity_definition>
+        <out_of_date>true</out_of_date>
+        <notes>There is a newer version of this activity.
+
+To update the activity, check out the workflow, select the activity, right click
+and select 'Update activity' to use the latest version, then publish the workflow</notes>
+    </wf_activity>
+</record_update>

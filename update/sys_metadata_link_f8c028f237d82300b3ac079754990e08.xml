@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>c6ef18b237d82300b3ac079754990e48</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_universal_dg_sighting_search">
+    <x_snc_universal_dg_sighting_search action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <link_url>http://samplurl.com</link_url>
+        <observable_value/>
+        <raw_data/>
+        <short_description>Default</short_description>
+        <sighting_count/>
+        <sighting_search_query/>
+        <sightings_over_time>{ "1535641200000": 1}</sightings_over_time>
+        <sn_sec_cmn_sightings_search_config display_value="Default Search (UDG)">9ed9f28d0f04230095d741fce1050e47</sn_sec_cmn_sightings_search_config>
+        <source>Universal Demo Generator</source>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-09-05 20:14:33</sys_created_on>
+        <sys_id>c6ef18b237d82300b3ac079754990e48</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-09-05 20:16:58</sys_updated_on>
+    </x_snc_universal_dg_sighting_search>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-09-05 20:18:16</sys_created_on>
+        <sys_id>f8c028f237d82300b3ac079754990e08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2018-09-05 21:14:33</sys_name>
+        <sys_package display_value="Universal Demo Generator" source="x_snc_universal_dg">c0b9f17c37042300b3ac079754990ee9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Universal Demo Generator">c0b9f17c37042300b3ac079754990ee9</sys_scope>
+        <sys_update_name>sys_metadata_link_f8c028f237d82300b3ac079754990e08</sys_update_name>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-09-05 20:18:16</sys_updated_on>
+        <tablename>x_snc_universal_dg_sighting_search</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_sec_core_integration_item">
+    <sn_sec_core_integration_item action="INSERT_OR_UPDATE">
+        <banner_logo>b13d0afc37442300b3ac079754990e9e</banner_logo>
+        <capabilities>abf604c1ff032200c68c84648e94fa48,b5aea3d70bc332008f9108e3c5673ac8,9cb2a52aff103200c68c84648e94fa6b,34cf29e10b1032009f66e94685673a45,39344d4f0b273200263a089b37673ab1</capabilities>
+        <categories>900e912b53221200158b7cbe1ec5877e,3bfc8d08ab063200aa6de937f3a57ee6</categories>
+        <configurable>true</configurable>
+        <create_child_integration_item>false</create_child_integration_item>
+        <description>Universal Data Generator is an application providing demo response for Threat Lookup, Email Search, Get Running Processes and Network Statistics</description>
+        <external_link/>
+        <help_link/>
+        <install_script/>
+        <installed>false</installed>
+        <max_child_integration_item/>
+        <name>Universal Demo Generator</name>
+        <order>100</order>
+        <parent/>
+        <plugin_id>com.snc.threat.intelligence</plugin_id>
+        <short_description>Universal Data Generator is an application providing demo response for Threat Lookup, Email Search, Get Running Processes and Network Statistics</short_description>
+        <sys_class_name>sn_sec_core_integration_item</sys_class_name>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-08-18 11:35:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>3eea797037442300b3ac079754990e89</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Universal Demo Generator</sys_name>
+        <sys_package display_value="Universal Demo Generator" source="x_snc_universal_dg">c0b9f17c37042300b3ac079754990ee9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Universal Demo Generator">c0b9f17c37042300b3ac079754990ee9</sys_scope>
+        <sys_update_name>sn_sec_core_integration_item_3eea797037442300b3ac079754990e89</sys_update_name>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-08-18 20:26:26</sys_updated_on>
+        <validation_script><![CDATA[validate(sysId, values);
+
+function validate(sysId, values){
+	//Set the value of "result" variable to non empty string if validation fails
+	result = "";
+}]]></validation_script>
+    </sn_sec_core_integration_item>
+</record_update>

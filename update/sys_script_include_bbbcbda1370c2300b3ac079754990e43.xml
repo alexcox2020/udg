@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_universal_dg.searchEmailDemoUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>searchEmailDemoUtils</name>
+        <script><![CDATA[var searchEmailDemoUtils = Class.create();
+searchEmailDemoUtils.prototype = {
+	initialize: function() {
+	},
+	
+	deleteSearch: function (sir_sys_id){
+		var gr_m2m = new GlideRecord("sn_si_m2m_incident_email_search");
+		gr_m2m.addQuery("sn_si_incident",sir_sys_id);
+		gr_m2m.query();
+		while(gr_m2m.next()){
+			var gr_search_results = new GlideRecord("sn_sec_cmn_email_search_result");
+			gr_search_results.addQuery("email_search",gr_m2m.sn_sec_cmn_email_search);
+			gr_search_results.query();
+			while(gr_search_results.next()){
+				var gr_search_result_entry = new GlideRecord("sn_sec_cmn_email_search_result_entry");
+				gr_search_result_entry.addQuery("email_search_result",gr_search_results.sys_id);
+				gr_search_result_entry.deleteMultiple();
+			}
+			gr_search_results.deleteMultiple();
+			var gr_search_criteria = new GlideRecord("sn_sec_cmn_email_search_criteria");
+			gr_search_criteria.addQuery("email_search",gr_m2m.sn_sec_cmn_email_search);
+			gr_search_criteria.deleteMultiple();
+			
+			var gr_search = new GlideRecord("sn_sec_cmn_email_search");
+			gr_search.addQuery("sys_id",gr_m2m.sn_sec_cmn_email_search);
+			gr_search.deleteMultiple();
+		}
+		gr_m2m.deleteMultiple();
+	},
+	
+//	simulateSearch: function(sir_sys_id, subject){
+	simulateSearch: function(sir_sys_id, email_search_sys_id, action){
+
+		var action2 = 'search';
+		
+		if (action == 'Search' || action == 'search') {
+			action  = "Search";	
+		    action2 = 'search';
+		} else if (action == 'Delete' || action == 'delete' || action == 'search_delete') {
+			action  = "Delete";
+			action2 = "search_delete";
+		} else {
+			action  = "Search";
+		    action2 = 'search';
+		}
+		
+		var searchResultjSon={
+			"result":[
+			{
+				"delivered_date":"",
+				"message_id":"ae57df24b9ab4e9cb8c5466753fd6f05@exchange.secops.local",
+				"read_status":"",
+				"recipient_address":"suzzane.baker@secops.local",
+				"sender":"Administrator@secops.local",
+				"trackedEvents":"receive, submit"
+			},
+			{
+				"delivered_date":"",
+				"message_id":"bd2791d56c474871b72a3aef38f9396e@exchange.secops.local",
+				"read_status":"",
+				"recipient_address":"suzzane.baker@secops.local",
+				"sender":"Administrator@secops.local",
+				"trackedEvents":"receive, submit"
+			}
+			]
+		};
+		
+		if (email_search_sys_id == '') return -1;
+		
+		//load email search
+		var gr_search = new GlideRecord("sn_sec_cmn_email_search");
+		if (! gr_search.get(email_search_sys_id)) return -2;
+		
+		//load search query
+		var subject = 'Totally Non-Not-Not-Anti-Evil Email Subject'; 
+		
+		var emailQuery = new GlideRecord('sn_sec_cmn_email_search_criteria');
+		emailQuery.addQuery('email_search', gr_search.sys_id);
+		emailQuery.addQuery('search_field','subject');
+		emailQuery.addQuery('search_text', '!=', '');
+		emailQuery.query();
+
+		if (emailQuery.next()) {
+			subject = emailQuery.search_text;
+		}
+		
+
+		//creating record in sn_sec_cmn_email_search_result (Email Search Result) table
+		var gr_search_results = new GlideRecord("sn_sec_cmn_email_search_result");
+		gr_search_results.email_search=gr_search.sys_id;
+		gr_search_results.action= action2;
+		gr_search_results.search_query="subject:"+subject+" AND from:secops@secopsintegration.onmicrosoft.com";
+		gr_search_results.raw_data=JSON.stringify(searchResultjSon, null, 4);
+		gr_search_results.result_count=searchResultjSon.result.length;
+		gr_search_results.search_date=new GlideDateTime();
+		gr_search_results.insert();
+
+
+		//create m2m record in sn_si_m2m_incident_email_search (Security Incident Email Searches) 
+		var gr_m2m = new GlideRecord("sn_si_m2m_incident_email_search");
+		gr_m2m.sn_si_incident=sir_sys_id;
+		gr_m2m.sn_sec_cmn_email_search=gr_search.sys_id;
+		gr_m2m.insert();
+
+		this.createSearchResultEntry(searchResultjSon,gr_search_results.sys_id,action);
+	
+		//Update security incident record with simulation results
+		var sourceIncident = new GlideRecord('sn_si_incident');
+		
+		if (sourceIncident.get(sir_sys_id)) {
+			
+			if (action == "search") {
+				sourceIncident.automation_activity = "Email search job found " + searchResultjSon.result.length + " matching messages";
+			} else {
+				sourceIncident.automation_activity = "Email deletion job found and deleted " + searchResultjSon.result.length + " matching messages";
+			}
+			
+			sourceIncident.update();
+				
+		}
+	},
+	
+	createSearchResultEntry: function(jSonData, search_result, action){
+		//create record in sn_sec_cmn_email_search_result_entry (Email Search Result Entry) table
+
+		for (var i in jSonData.result){
+			var gr_search_result_entry = new GlideRecord("sn_sec_cmn_email_search_result_entry");
+			gr_search_result_entry.email_search_result=search_result;
+			gr_search_result_entry.message_id=jSonData.result[i].message_id;
+			gr_search_result_entry.email_date_received=jSonData.result[i].delivered_date;
+			gr_search_result_entry.read_status=jSonData.result[i].read_status;
+			gr_search_result_entry.sender=jSonData.result[i].sender;
+			gr_search_result_entry.recipients=jSonData.result[i].recipient_address;
+			if (action == 'Search') {
+				gr_search_result_entry.deleted = false;
+			} else {
+				gr_search_result_entry.deleted = true;
+			}
+			
+			gr_search_result_entry.insert();
+			
+			
+			delete gr_search_result_entry;
+		}
+	},
+	
+	type: 'searchEmailDemoUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>alex.cox</sys_created_by>
+        <sys_created_on>2018-08-20 19:32:04</sys_created_on>
+        <sys_id>bbbcbda1370c2300b3ac079754990e43</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>searchEmailDemoUtils</sys_name>
+        <sys_package display_value="Universal Demo Generator" source="x_snc_universal_dg">c0b9f17c37042300b3ac079754990ee9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Universal Demo Generator">c0b9f17c37042300b3ac079754990ee9</sys_scope>
+        <sys_update_name>sys_script_include_bbbcbda1370c2300b3ac079754990e43</sys_update_name>
+        <sys_updated_by>alex.cox</sys_updated_by>
+        <sys_updated_on>2018-08-21 00:55:45</sys_updated_on>
+    </sys_script_include>
+</record_update>

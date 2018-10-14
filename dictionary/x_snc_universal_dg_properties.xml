@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Properties" max_length="40" name="x_snc_universal_dg_properties" type="collection">
+        <element label="Property name" max_length="40" name="property_name" type="string"/>
+        <element label="Property value" max_length="8000" name="property_value" type="string"/>
+    </element>
+</database>

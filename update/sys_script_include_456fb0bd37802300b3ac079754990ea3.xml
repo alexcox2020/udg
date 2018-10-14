@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_universal_dg.processNetstatEnrichment</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>processNetstatEnrichment</name>
+        <script><![CDATA[var processNetstatEnrichment = Class.create();
+processNetstatEnrichment.prototype = {
+	initialize: function() {
+	},
+	
+	getNetworkStatistics: function(affected_ci){
+		var response=[];
+		var conditionGr = new GlideRecord("x_snc_universal_dg_get_network_statistics");
+		conditionGr.addQuery("affected_ci",affected_ci);
+		conditionGr.addQuery("active","true");
+		conditionGr.query();
+		if (conditionGr.getRowCount()==0){ //find condition (noththing found)
+			conditionGr.initialize();
+			conditionGr.addQuery("affected_ci","");
+			conditionGr.addQuery("active","true");
+			conditionGr.query();
+			if (conditionGr.getRowCount()==0){ //find default condition (noththing found)
+				return null;
+			}
+		}
+		conditionGr.next();
+		if (conditionGr.getRowCount()>1){
+			gs.warn("[UDG] Warning multiple reponses are defined for single CI! Using: "+conditionGr.sys_id);
+		}
+		response=this.isValidjSon(conditionGr.response);
+		if(!response){
+			response=[];
+		}
+		if (conditionGr.include_unix_netstat){
+			var globalPropertyGr = new GlideRecord("x_snc_universal_dg_properties");
+			globalPropertyGr.addQuery("property_name","default_linux_netstat");
+			globalPropertyGr.query();
+			if (globalPropertyGr.next()){
+				response=response.concat(JSON.parse(globalPropertyGr.property_value));
+			}
+			else{
+				gs.warn("[UDG] Warning no 'default_linux_netstat' property found");
+			}
+		}
+		if (conditionGr.include_windows_netstat){
+			var globalPropertyGr = new GlideRecord("x_snc_universal_dg_properties");
+			globalPropertyGr.addQuery("property_name","default_windows_netstat");
+			globalPropertyGr.query();
+			if (globalPropertyGr.next()){
+				response=response.concat(JSON.parse(globalPropertyGr.property_value));
+			}
+			else{
+				gs.warn("[UDG] Warning no 'default_windows_netstat' property found");
+			}
+		}
+		
+		var resultjSon={"enrichment_data_mapping":conditionGr.sn_sec_cmn_enrichment_data_mapping+"",
+			"response":response};
+			return JSON.stringify(resultjSon);
+		},
+	
+	getRunningProcesses: function(affected_ci){
+		var response=[];
+		var conditionGr = new GlideRecord("x_snc_universal_dg_get_running_processes");
+		conditionGr.addQuery("affected_ci",affected_ci);
+		conditionGr.addQuery("active","true");
+		conditionGr.query();
+		if (conditionGr.getRowCount()==0){ //find condition (noththing found)
+			conditionGr.initialize();
+			conditionGr.addQuery("affected_ci","");
+			conditionGr.addQuery("active","true");
+			conditionGr.query();
+			if (conditionGr.getRowCount()==0){ //find default condition (noththing found)
+				return null;
+			}
+		}
+		conditionGr.next();
+		if (conditionGr.getRowCount()>1){
+			gs.warn("[UDG] Warning multiple reponses are defined for single CI! Using: "+conditionGr.sys_id);
+		}
+		response=this.isValidjSon(conditionGr.response);
+		if(!response){
+			response=[];
+		}
+		if (conditionGr.include_unix_processes){
+			var globalPropertyGr = new GlideRecord("x_snc_universal_dg_properties");
+			globalPropertyGr.addQuery("property_name","default_linux_processes");
+			globalPropertyGr.query();
+			if (globalPropertyGr.next()){
+				response=response.concat(JSON.parse(globalPropertyGr.property_value));
+			}
+			else{
+				gs.warn("[UDG] Warning no 'default_linux_processes' property found");
+			}
+		}
+		if (conditionGr.include_windows_processes){
+			var globalPropertyGr = new GlideRecord("x_snc_universal_dg_properties");
+			globalPropertyGr.addQuery("property_name","default_windows_processes");
+			globalPropertyGr.query();
+			if (globalPropertyGr.next()){
+				response=response.concat(JSON.parse(globalPropertyGr.property_value));
+			}
+			else{
+				gs.warn("[UDG] Warning no 'default_windows_processes' property found");
+			}
+		}
+		
+		var resultjSon={"enrichment_data_mapping":conditionGr.sn_sec_cmn_enrichment_data_mapping+"",
+			"response":response};
+			return JSON.stringify(resultjSon);
+		},
+		
+		isValidjSon: function(str) {
+			var ret;
+			try {
+				ret=JSON.parse(str);
+			} catch (e) {
+				return false;
+			}
+			return ret;
+		},
+		
+		
+		type: 'processNetstatEnrichment'
+	};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-08-21 09:44:54</sys_created_on>
+        <sys_id>456fb0bd37802300b3ac079754990ea3</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>processNetstatEnrichment</sys_name>
+        <sys_package display_value="Universal Demo Generator" source="x_snc_universal_dg">c0b9f17c37042300b3ac079754990ee9</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Universal Demo Generator">c0b9f17c37042300b3ac079754990ee9</sys_scope>
+        <sys_update_name>sys_script_include_456fb0bd37802300b3ac079754990ea3</sys_update_name>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-09-02 20:58:45</sys_updated_on>
+    </sys_script_include>
+</record_update>

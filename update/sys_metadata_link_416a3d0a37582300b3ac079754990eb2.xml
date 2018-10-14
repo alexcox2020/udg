@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>828b1539371c2300b3ac079754990e9a</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_universal_dg_threat_lookup">
+    <x_snc_universal_dg_threat_lookup action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <details>details</details>
+        <external_link/>
+        <finding>Malicious</finding>
+        <observable_value/>
+        <raw_data>{"some":"json"}</raw_data>
+        <result>result value</result>
+        <short_description>Default</short_description>
+        <sn_sec_core_integration_item display_value="Universal Demo Generator">3eea797037442300b3ac079754990e89</sn_sec_core_integration_item>
+        <sn_ti_observable/>
+        <source_engine>Demo Engine</source_engine>
+        <source_engine_version>v0.1</source_engine_version>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-09-02 22:04:38</sys_created_on>
+        <sys_id>828b1539371c2300b3ac079754990e9a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-09-03 08:32:32</sys_updated_on>
+    </x_snc_universal_dg_threat_lookup>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-09-03 18:54:26</sys_created_on>
+        <sys_id>416a3d0a37582300b3ac079754990eb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2018-09-02 23:04:38</sys_name>
+        <sys_package display_value="Universal Demo Generator" source="x_snc_universal_dg">c0b9f17c37042300b3ac079754990ee9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Universal Demo Generator">c0b9f17c37042300b3ac079754990ee9</sys_scope>
+        <sys_update_name>sys_metadata_link_416a3d0a37582300b3ac079754990eb2</sys_update_name>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-09-03 18:54:26</sys_updated_on>
+        <tablename>x_snc_universal_dg_threat_lookup</tablename>
+    </sys_metadata_link>
+</record_update>

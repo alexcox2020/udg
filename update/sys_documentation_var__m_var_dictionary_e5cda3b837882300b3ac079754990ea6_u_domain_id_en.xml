@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_domain_id" label="Domain ID" language="en" table="var__m_var_dictionary_e5cda3b837882300b3ac079754990ea6">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_domain_id</element>
+            <help/>
+            <hint/>
+            <label>Domain ID</label>
+            <language>en</language>
+            <name>var__m_var_dictionary_e5cda3b837882300b3ac079754990ea6</name>
+            <plural>Domain ID</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>martin.meduna</sys_created_by>
+            <sys_created_on>2018-08-18 19:59:26</sys_created_on>
+            <sys_id>d5df233c37882300b3ac079754990e13</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Domain ID</sys_name>
+            <sys_package display_value="Universal Demo Generator" source="x_snc_universal_dg">c0b9f17c37042300b3ac079754990ee9</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Universal Demo Generator">c0b9f17c37042300b3ac079754990ee9</sys_scope>
+            <sys_update_name>sys_documentation_var__m_var_dictionary_e5cda3b837882300b3ac079754990ea6_u_domain_id_en</sys_update_name>
+            <sys_updated_by>martin.meduna</sys_updated_by>
+            <sys_updated_on>2018-08-18 19:59:26</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

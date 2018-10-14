@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_snc_universal_dg.properties_user" name="x_snc_universal_dg.properties_user">dd2ec63037842300b3ac079754990e0d</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-08-18 12:52:37</sys_created_on>
+        <sys_id>552ec63037842300b3ac079754990e10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>dd2ec63037842300b3ac079754990e0d</sys_name>
+        <sys_package display_value="Universal Demo Generator" source="x_snc_universal_dg">c0b9f17c37042300b3ac079754990ee9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Universal Demo Generator">c0b9f17c37042300b3ac079754990ee9</sys_scope>
+        <sys_update_name>sys_embedded_help_role_552ec63037842300b3ac079754990e10</sys_update_name>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-08-18 12:52:37</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

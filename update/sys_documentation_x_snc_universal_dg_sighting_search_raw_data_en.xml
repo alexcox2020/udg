@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="raw_data" label="Raw data" language="en" table="x_snc_universal_dg_sighting_search">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>raw_data</element>
+            <help/>
+            <hint/>
+            <label>Raw data</label>
+            <language>en</language>
+            <name>x_snc_universal_dg_sighting_search</name>
+            <plural>Raw data</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>martin.meduna</sys_created_by>
+            <sys_created_on>2018-09-05 11:24:53</sys_created_on>
+            <sys_id>a3a6e2ee37142300b3ac079754990e07</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Raw data</sys_name>
+            <sys_package display_value="Universal Demo Generator" source="x_snc_universal_dg">c0b9f17c37042300b3ac079754990ee9</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Universal Demo Generator">c0b9f17c37042300b3ac079754990ee9</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_universal_dg_sighting_search_raw_data_en</sys_update_name>
+            <sys_updated_by>martin.meduna</sys_updated_by>
+            <sys_updated_on>2018-09-05 11:24:53</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

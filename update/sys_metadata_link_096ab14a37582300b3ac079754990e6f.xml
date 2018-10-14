@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>9e0c7b7137d02300b3ac079754990e03</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_universal_dg_threat_lookup">
+    <x_snc_universal_dg_threat_lookup action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <details>The engine 'CLEAN MX' has deemed the observable as not malicious clean site&#13;
+The engine 'DNS8' has deemed the observable as not malicious clean site&#13;
+The engine 'OpenPhish' has deemed the observable as not malicious clean site&#13;
+The engine 'VX Vault' has deemed the observable as malicious malicious site&#13;
+The engine 'ZDB Zeus' has deemed the observable as not malicious clean site&#13;
+The engine 'AutoShun' has deemed the observable as not malicious unrated site&#13;
+The engine 'ZCloudsec' has deemed the observable as not malicious clean site&#13;
+The engine 'PhishLabs' has deemed the observable as not malicious unrated site&#13;
+The engine 'Zerofox' has deemed the observable as not malicious clean site&#13;
+The engine 'K7AntiVirus' has deemed the observable as not malicious clean site&#13;
+The engine 'FraudSense' has deemed the observable as not malicious clean site&#13;
+The engine 'Virusdie External Site Scan' has deemed the observable as not malicious clean site&#13;
+The engine 'Quttera' has deemed the observable as not malicious clean site&#13;
+The engine 'AegisLab WebGuard' has deemed the observable as not malicious clean site&#13;
+The engine 'MalwareDomainList' has deemed the observable as not malicious clean site&#13;
+The engine 'ZeusTracker' has deemed the observable as not malicious clean site&#13;
+The engine 'zvelo' has deemed the observable as not malicious clean site&#13;
+The engine 'Google Safebrowsing' has deemed the observable as not malicious clean site&#13;
+The engine 'Kaspersky' has deemed the observable as malicious malware site&#13;
+The engine 'BitDefender' has deemed the observable as malicious malware site&#13;
+The engine 'Opera' has deemed the observable as not malicious clean site&#13;
+The engine 'Certly' has deemed the observable as not malicious clean site&#13;
+The engine 'G-Data' has deemed the observable as malicious malware site&#13;
+The engine 'C-SIRT' has deemed the observable as not malicious clean site&#13;
+The engine 'CyberCrime' has deemed the observable as not malicious clean site&#13;
+The engine 'SecureBrain' has deemed the observable as not malicious clean site&#13;
+The engine 'Malware Domain Blocklist' has deemed the observable as not malicious clean site&#13;
+The engine 'MalwarePatrol' has deemed the observable as not malicious clean site&#13;
+The engine 'Webutation' has deemed the observable as not malicious clean site&#13;
+The engine 'Trustwave' has deemed the observable as not malicious clean site&#13;
+The engine 'Web Security Guard' has deemed the observable as not malicious clean site&#13;
+The engine 'CyRadar' has deemed the observable as not malicious clean site&#13;
+The engine 'desenmascara.me' has deemed the observable as not malicious clean site&#13;
+The engine 'ADMINUSLabs' has deemed the observable as not malicious clean site&#13;
+The engine 'Malwarebytes hpHosts' has deemed the observable as malicious malware site&#13;
+The engine 'Dr.Web' has deemed the observable as malicious malicious site&#13;
+The engine 'AlienVault' has deemed the observable as not malicious clean site&#13;
+The engine 'Emsisoft' has deemed the observable as not malicious clean site&#13;
+The engine 'Rising' has deemed the observable as not malicious clean site&#13;
+The engine 'Malc0de Database' has deemed the observable as malicious malicious site&#13;
+The engine 'malwares.com URL checker' has deemed the observable as not malicious clean site&#13;
+The engine 'Phishtank' has deemed the observable as not malicious clean site&#13;
+The engine 'Malwared' has deemed the observable as not malicious clean site&#13;
+The engine 'Avira' has deemed the observable as malicious malware site&#13;
+The engine 'NotMining' has deemed the observable as not malicious unrated site&#13;
+The engine 'StopBadware' has deemed the observable as not malicious unrated site&#13;
+The engine 'Antiy-AVL' has deemed the observable as not malicious clean site&#13;
+The engine 'Forcepoint ThreatSeeker' has deemed the observable as not malicious clean site&#13;
+The engine 'SCUMWARE.org' has deemed the observable as not malicious clean site&#13;
+The engine 'Comodo Site Inspector' has deemed the observable as not malicious clean site&#13;
+The engine 'Malekal' has deemed the observable as not malicious clean site&#13;
+The engine 'ESET' has deemed the observable as malicious malware site&#13;
+The engine 'Sophos' has deemed the observable as malicious malicious site&#13;
+The engine 'Yandex Safebrowsing' has deemed the observable as malicious malware site&#13;
+The engine 'Spam404' has deemed the observable as not malicious clean site&#13;
+The engine 'Nucleon' has deemed the observable as not malicious clean site&#13;
+The engine 'Sucuri SiteCheck' has deemed the observable as not malicious clean site&#13;
+The engine 'Blueliv' has deemed the observable as not malicious clean site&#13;
+The engine 'Netcraft' has deemed the observable as not malicious unrated site&#13;
+The engine 'CRDF' has deemed the observable as malicious malicious site&#13;
+The engine 'ThreatHive' has deemed the observable as not malicious clean site&#13;
+The engine 'FraudScore' has deemed the observable as not malicious clean site&#13;
+The engine 'Tencent' has deemed the observable as not malicious clean site&#13;
+The engine 'URLQuery' has deemed the observable as not malicious unrated site&#13;
+The engine 'Fortinet' has deemed the observable as malicious malware site&#13;
+The engine 'ZeroCERT' has deemed the observable as not malicious clean site&#13;
+The engine 'Baidu-International' has deemed the observable as not malicious clean site&#13;
+The engine 'securolytics' has deemed the observable as not malicious clean site</details>
+        <external_link>https://www.virustotal.com/url/2a4c4ff4ee3651ec2bdd28c054977f98ea202310855356386d450ba3a361e629/analysis/1535967783/</external_link>
+        <finding>Malicious</finding>
+        <observable_value>http://keyba01se.usa.cc/henrynonso.exe</observable_value>
+        <raw_data>"{\"scan_id\": \"2a4c4ff4ee3651ec2bdd28c054977f98ea202310855356386d450ba3a361e629-1535967783\", \"resource\": \"2a4c4ff4ee3651ec2bdd28c054977f98ea202310855356386d450ba3a361e629-1535967783\", \"url\": \"http://keyba01se.usa.cc/henrynonso.exe\", \"response_code\": 1, \"scan_date\": \"2018-09-03 09:43:03\", \"permalink\": \"https://www.virustotal.com/url/2a4c4ff4ee3651ec2bdd28c054977f98ea202310855356386d450ba3a361e629/analysis/1535967783/\", \"verbose_msg\": \"Scan finished, scan information embedded in this object\", \"filescan_id\": null, \"positives\": 13, \"total\": 68, \"scans\": {\"CLEAN MX\": {\"detected\": false, \"result\": \"clean site\"}, \"DNS8\": {\"detected\": false, \"result\": \"clean site\"}, \"OpenPhish\": {\"detected\": false, \"result\": \"clean site\"}, \"VX Vault\": {\"detected\": true, \"result\": \"malicious site\"}, \"ZDB Zeus\": {\"detected\": false, \"result\": \"clean site\"}, \"AutoShun\": {\"detected\": false, \"result\": \"unrated site\"}, \"ZCloudsec\": {\"detected\": false, \"result\": \"clean site\"}, \"PhishLabs\": {\"detected\": false, \"result\": \"unrated site\"}, \"Zerofox\": {\"detected\": false, \"result\": \"clean site\"}, \"K7AntiVirus\": {\"detected\": false, \"result\": \"clean site\"}, \"FraudSense\": {\"detected\": false, \"result\": \"clean site\"}, \"Virusdie External Site Scan\": {\"detected\": false, \"result\": \"clean site\"}, \"Quttera\": {\"detected\": false, \"result\": \"clean site\"}, \"AegisLab WebGuard\": {\"detected\": false, \"result\": \"clean site\"}, \"MalwareDomainList\": {\"detected\": false, \"result\": \"clean site\", \"detail\": \"http://www.malwaredomainlist.com/mdl.php?search=keyba01se.usa.cc\"}, \"ZeusTracker\": {\"detected\": false, \"result\": \"clean site\", \"detail\": \"https://zeustracker.abuse.ch/monitor.php?host=keyba01se.usa.cc\"}, \"zvelo\": {\"detected\": false, \"result\": \"clean site\"}, \"Google Safebrowsing\": {\"detected\": false, \"result\": \"clean site\"}, \"Kaspersky\": {\"detected\": true, \"result\": \"malware site\"}, \"BitDefender\": {\"detected\": true, \"result\": \"malware site\"}, \"Opera\": {\"detected\": false, \"result\": \"clean site\"}, \"Certly\": {\"detected\": false, \"result\": \"clean site\"}, \"G-Data\": {\"detected\": true, \"result\": \"malware site\"}, \"C-SIRT\": {\"detected\": false, \"result\": \"clean site\"}, \"CyberCrime\": {\"detected\": false, \"result\": \"clean site\"}, \"SecureBrain\": {\"detected\": false, \"result\": \"clean site\"}, \"Malware Domain Blocklist\": {\"detected\": false, \"result\": \"clean site\"}, \"MalwarePatrol\": {\"detected\": false, \"result\": \"clean site\"}, \"Webutation\": {\"detected\": false, \"result\": \"clean site\"}, \"Trustwave\": {\"detected\": false, \"result\": \"clean site\"}, \"Web Security Guard\": {\"detected\": false, \"result\": \"clean site\"}, \"CyRadar\": {\"detected\": false, \"result\": \"clean site\"}, \"desenmascara.me\": {\"detected\": false, \"result\": \"clean site\"}, \"ADMINUSLabs\": {\"detected\": false, \"result\": \"clean site\"}, \"Malwarebytes hpHosts\": {\"detected\": true, \"result\": \"malware site\"}, \"Dr.Web\": {\"detected\": true, \"result\": \"malicious site\"}, \"AlienVault\": {\"detected\": false, \"result\": \"clean site\"}, \"Emsisoft\": {\"detected\": false, \"result\": \"clean site\"}, \"Rising\": {\"detected\": false, \"result\": \"clean site\"}, \"Malc0de Database\": {\"detected\": true, \"result\": \"malicious site\", \"detail\": \"http://malc0de.com/database/index.php?search=keyba01se.usa.cc\"}, \"malwares.com URL checker\": {\"detected\": false, \"result\": \"clean site\"}, \"Phishtank\": {\"detected\": false, \"result\": \"clean site\"}, \"Malwared\": {\"detected\": false, \"result\": \"clean site\"}, \"Avira\": {\"detected\": true, \"result\": \"malware site\"}, \"NotMining\": {\"detected\": false, \"result\": \"unrated site\"}, \"StopBadware\": {\"detected\": false, \"result\": \"unrated site\"}, \"Antiy-AVL\": {\"detected\": false, \"result\": \"clean site\"}, \"Forcepoint ThreatSeeker\": {\"detected\": false, \"result\": \"clean site\"}, \"SCUMWARE.org\": {\"detected\": false, \"result\": \"clean site\"}, \"Comodo Site Inspector\": {\"detected\": false, \"result\": \"clean site\"}, \"Malekal\": {\"detected\": false, \"result\": \"clean site\"}, \"ESET\": {\"detected\": true, \"result\": \"malware site\"}, \"Sophos\": {\"detected\": true, \"result\": \"malicious site\"}, \"Yandex Safebrowsing\": {\"detected\": true, \"result\": \"malware site\", \"detail\": \"http://yandex.com/infected?l10n=en&amp;url=http://keyba01se.usa.cc/henrynonso.exe\"}, \"Spam404\": {\"detected\": false, \"result\": \"clean site\"}, \"Nucleon\": {\"detected\": false, \"result\": \"clean site\"}, \"Sucuri SiteCheck\": {\"detected\": false, \"result\": \"clean site\"}, \"Blueliv\": {\"detected\": false, \"result\": \"clean site\"}, \"Netcraft\": {\"detected\": false, \"result\": \"unrated site\"}, \"CRDF\": {\"detected\": true, \"result\": \"malicious site\"}, \"ThreatHive\": {\"detected\": false, \"result\": \"clean site\"}, \"FraudScore\": {\"detected\": false, \"result\": \"clean site\"}, \"Tencent\": {\"detected\": false, \"result\": \"clean site\"}, \"URLQuery\": {\"detected\": false, \"result\": \"unrated site\"}, \"Fortinet\": {\"detected\": true, \"result\": \"malware site\"}, \"ZeroCERT\": {\"detected\": false, \"result\": \"clean site\"}, \"Baidu-International\": {\"detected\": false, \"result\": \"clean site\"}, \"securolytics\": {\"detected\": false, \"result\": \"clean site\"}}}"</raw_data>
+        <result>The following 13 engine(s) reported the observable as malicious: VX Vault, Kaspersky, BitDefender, G-Data, Malwarebytes hpHosts, Dr.Web, Malc0de Database, Avira, ESET, Sophos, Yandex Safebrowsing, CRDF, Fortinet</result>
+        <short_description>keyba01se.usa.cc/henrynonso.exe</short_description>
+        <sn_sec_core_integration_item display_value="VirusTotal">aafbf46ad72212007a6de294de6103a2</sn_sec_core_integration_item>
+        <sn_ti_observable/>
+        <source_engine>VirusTotal API</source_engine>
+        <source_engine_version>v2</source_engine_version>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-09-03 09:46:54</sys_created_on>
+        <sys_id>9e0c7b7137d02300b3ac079754990e03</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-09-03 12:44:14</sys_updated_on>
+    </x_snc_universal_dg_threat_lookup>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-09-03 18:54:26</sys_created_on>
+        <sys_id>096ab14a37582300b3ac079754990e6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2018-09-03 10:46:54</sys_name>
+        <sys_package display_value="Universal Demo Generator" source="x_snc_universal_dg">c0b9f17c37042300b3ac079754990ee9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Universal Demo Generator">c0b9f17c37042300b3ac079754990ee9</sys_scope>
+        <sys_update_name>sys_metadata_link_096ab14a37582300b3ac079754990e6f</sys_update_name>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-09-03 18:54:26</sys_updated_on>
+        <tablename>x_snc_universal_dg_threat_lookup</tablename>
+    </sys_metadata_link>
+</record_update>

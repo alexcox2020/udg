@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app">
+    <sys_app action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <enforce_license>log</enforce_license>
+        <js_level>helsinki_es5</js_level>
+        <licensable>true</licensable>
+        <license_category>none</license_category>
+        <license_model>none</license_model>
+        <logo/>
+        <menu/>
+        <name>Universal Demo Generator</name>
+        <private>false</private>
+        <restrict_table_access>false</restrict_table_access>
+        <runtime_access_tracking>permissive</runtime_access_tracking>
+        <scope>x_snc_universal_dg</scope>
+        <scoped_administration>false</scoped_administration>
+        <short_description/>
+        <source>x_snc_universal_dg</source>
+        <store_correlation_id/>
+        <store_url/>
+        <sys_class_name>sys_app</sys_class_name>
+        <sys_code/>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-08-18 11:23:16</sys_created_on>
+        <sys_id>c0b9f17c37042300b3ac079754990ee9</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-09-05 20:20:01</sys_updated_on>
+        <template/>
+        <trackable>true</trackable>
+        <user_role/>
+        <vendor/>
+        <vendor_prefix/>
+        <version>0.93</version>
+    </sys_app>
+</record_update>

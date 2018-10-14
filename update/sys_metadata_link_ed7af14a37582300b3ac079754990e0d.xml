@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>2a8ccdb937d82300b3ac079754990e60</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_universal_dg_get_network_statistics">
+    <x_snc_universal_dg_get_network_statistics action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <affected_ci display_value="wepos01.s043.s-mart.com">27355e5d131d660051ebbf6f3244b0a0</affected_ci>
+        <include_unix_netstat>false</include_unix_netstat>
+        <include_windows_netstat>true</include_windows_netstat>
+        <response/>
+        <short_description>WEPOS01</short_description>
+        <sn_sec_cmn_enrichment_data_mapping display_value="NetStat Enrichment">66d6de440b202200263a089b37673a7b</sn_sec_cmn_enrichment_data_mapping>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-09-02 20:56:33</sys_created_on>
+        <sys_id>2a8ccdb937d82300b3ac079754990e60</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-09-03 08:32:20</sys_updated_on>
+    </x_snc_universal_dg_get_network_statistics>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-09-03 18:54:45</sys_created_on>
+        <sys_id>ed7af14a37582300b3ac079754990e0d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Universal Demo Generator" source="x_snc_universal_dg">c0b9f17c37042300b3ac079754990ee9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Universal Demo Generator">c0b9f17c37042300b3ac079754990ee9</sys_scope>
+        <sys_update_name>sys_metadata_link_ed7af14a37582300b3ac079754990e0d</sys_update_name>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-09-03 18:54:45</sys_updated_on>
+        <tablename>x_snc_universal_dg_get_network_statistic</tablename>
+    </sys_metadata_link>
+</record_update>

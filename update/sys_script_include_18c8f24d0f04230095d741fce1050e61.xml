@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_universal_dg.sightingSearch</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>sightingSearch</name>
+        <script><![CDATA[var sightingSearch = Class.create();
+sightingSearch.prototype = {
+	initialize: function() {
+	},
+	createLogRecord: function(template,observable_value){
+		var randomdt = new GlideDateTime();
+		//minus one day plus random  miliseconds in range of 10 minutes.
+		randomdt.subtract(86400000+Math.floor(Math.random() * 60000) + 1);
+		var gr_template = new GlideRecord("x_snc_universal_dg_properties");
+		gr_template.addQuery("property_name",template);
+		gr_template.query();
+		if (gr_template.next()){
+			//	var tmpTemplate=gr_template.property_value+"";
+			//	gs.info("[UDG] Debug: "+tmpTemplate);
+			var templatejSon=this.isValidjSon(gr_template.property_value);
+			if (!templatejSon){
+				gs.warn("[UDG] Invalid template record.");
+				return null;
+			}
+			//select random template
+			var message=templatejSon.template[Math.floor(Math.random() * templatejSon.template.length)];
+			message=message.replace("${IP_RFC1819}",this.getRandomRFC1819);
+				message=message.replace("${IP_OBSERVABLE}",observable_value);
+					message=message.replace("${URL_OBSERVABLE}",observable_value);
+						
+						var gr_log = new GlideRecord("x_snc_universal_dg_logs");
+						gr_log.date=randomdt;
+						gr_log.message=message;
+						gr_log.observable_value=observable_value;
+						gr_log.insert();
+					}
+					else{
+						gs.warn("[UDG] No template record found.");
+						return null;
+					}
+				},
+				getRandomRFC1819: function(){
+					var prefixArray=["192.168","10","172"];
+					var prefix=prefixArray[Math.floor(Math.random() * 3)];
+					var ip="";
+					if (prefix=="192.168"){
+						ip=prefix+"."+(Math.floor(Math.random() * 254)+1)+"."+(Math.floor(Math.random() * 254)+1);
+					}
+					if (prefix=="10"){
+						ip=prefix+"."+(Math.floor(Math.random() * 254)+1)+"."+(Math.floor(Math.random() * 254)+1)+"."+(Math.floor(Math.random() * 254)+1);
+					}
+					if (prefix=="172"){
+						ip=prefix+"."+(Math.floor(Math.random() * 16)+16)+"."+(Math.floor(Math.random() * 254)+1)+"."+(Math.floor(Math.random() * 254)+1);
+					}
+					return ip;
+				},
+				
+				sightingsSearch: function(observable_ids,query){
+					//	gs.info("[UDG] Info observables: "+observable_ids);
+					//	gs.info("[UDG] Info query: "+query);
+					var observablejSon=JSON.parse(observable_ids);
+					var queryjSon=JSON.parse(query);
+					var response = {
+						"source": "Universal Demo Generator",
+						"query": {
+							"start_date": 0,
+							"end_date": 0,
+							"max_rows": "1000"
+						},
+						"results": []
+					};
+					response.query.link_url=gs.getProperty('glide.servlet.uri')+"x_snc_universal_dg_sightingsearch.do?search=${query}";
+						response.query.text=""+queryjSon.text;
+						response.query.configurationId=""+queryjSon.configurationId;
+						response.results=[];
+						
+						for (var j in observablejSon){
+							var conditionGr = new GlideRecord("x_snc_universal_dg_sighting_search");
+							conditionGr.addQuery("observable_value",observablejSon[j].value);
+							conditionGr.addQuery("active","true");
+							conditionGr.query();
+							if (conditionGr.getRowCount()==0){ //find condition (noththing found)
+								conditionGr.initialize();
+								conditionGr.addQuery("observable_value","");
+								conditionGr.addQuery("active","true");
+								conditionGr.query();
+								if (conditionGr.getRowCount()==0){ //find default condition (noththing found)
+									return null;
+								}
+							}
+							conditionGr.next();
+							if (conditionGr.getRowCount()>1){
+								gs.warn("[UDG] Warning multiple reponses are defined for single observable! Using: "+conditionGr.short_description);
+							}
+							
+							response.results.push({"observable":{},"sightings":{}});
+								response.results[j].observable['value']=observablejSon[j].value;
+								response.results[j].observable['type']=observablejSon[j].type;
+								response.results[j].observable['valueLower']=observablejSon[j].type.toLowerCase();
+								
+								//response.results[j].sightings={};
+									if (conditionGr.sighting_count==""){
+										response.results[j].sightings.count=Math.floor(Math.random() * 10) + 1;
+									}
+									else{
+										response.results[j].sightings.count=parseInt(conditionGr.sighting_count);
+									}
+									
+									var occurrences=this.isValidjSon(conditionGr.sightings_over_time);
+									if(!occurrences){
+										occurrences="";
+									}
+									response.results[j].sightings.occurrences=occurrences;
+									
+									var rwData=this.isValidjSon(conditionGr.raw_data);
+									if(!rwData){
+										rwData={count:0};
+										}
+										response.results[j].sightings.raw_data=rwData;
+										
+										var gr_log = new GlideRecord("x_snc_universal_dg_logs");
+										gr_log.addQuery("observable_value",observablejSon[j].value);
+										gr_log.query();
+										if (gr_log.getRowCount()>0){
+											response.results[j].sightings.count=gr_log.getRowCount();
+										}
+										else{
+											var template;
+											//if type is url or IP
+											if (observablejSon[j].type=="ec9d47809f81120035c6786f957fcfa7" || observablejSon[j].type=="d5823de6af1112002863699b9a264898")
+												{
+												if (observablejSon[j].type=="ec9d47809f81120035c6786f957fcfa7"){
+													template="url_log_template";
+												}
+												if (observablejSon[j].type=="d5823de6af1112002863699b9a264898"){
+													template="ip_log_template";
+												}
+												
+												for (var i=0; i<response.results[j].sightings.count;i++){
+													this.createLogRecord(template,observablejSon[j].value);
+												}
+											}
+											else{
+												//overright link
+												response.query.link_url="no-link-available-for-the-search";
+											}
+										}
+										delete conditionGr;
+									}
+									
+									
+									//gs.info("[UDG] ss result: "+JSON.stringify(response));
+									return JSON.stringify(response);
+									
+								},
+								
+								isValidjSon: function(str) {
+									var ret;
+									try {
+										ret=JSON.parse(str);
+									} catch (e) {
+										return false;
+									}
+									return ret;
+								},
+								type: 'sightingSearch'
+							};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-08-19 10:37:55</sys_created_on>
+        <sys_id>18c8f24d0f04230095d741fce1050e61</sys_id>
+        <sys_mod_count>98</sys_mod_count>
+        <sys_name>sightingSearch</sys_name>
+        <sys_package display_value="Universal Demo Generator" source="x_snc_universal_dg">c0b9f17c37042300b3ac079754990ee9</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Universal Demo Generator">c0b9f17c37042300b3ac079754990ee9</sys_scope>
+        <sys_update_name>sys_script_include_18c8f24d0f04230095d741fce1050e61</sys_update_name>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-09-09 16:10:44</sys_updated_on>
+    </sys_script_include>
+</record_update>

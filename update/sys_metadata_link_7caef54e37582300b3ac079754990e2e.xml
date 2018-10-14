@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>9ed9f28d0f04230095d741fce1050e47</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_sec_cmn_sightings_search_config">
+    <sn_sec_cmn_sightings_search_config action="INSERT_OR_UPDATE">
+        <maximum_observables_per_search>25</maximum_observables_per_search>
+        <name>Default Search (UDG)</name>
+        <observable_type>cc8d30c3d70322007a6de294de610322,6efcbc83d70322007a6de294de610332,e33d7c83d70322007a6de294de610399</observable_type>
+        <search>${observable}</search>
+        <sightings_search_source display_value="Universal Demo Generator">766cb9b037442300b3ac079754990e41</sightings_search_source>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-08-19 10:43:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>9ed9f28d0f04230095d741fce1050e47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-08-19 10:43:12</sys_updated_on>
+    </sn_sec_cmn_sightings_search_config>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-09-03 19:12:59</sys_created_on>
+        <sys_id>7caef54e37582300b3ac079754990e2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Default Search (UDG)</sys_name>
+        <sys_package display_value="Universal Demo Generator" source="x_snc_universal_dg">c0b9f17c37042300b3ac079754990ee9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Universal Demo Generator">c0b9f17c37042300b3ac079754990ee9</sys_scope>
+        <sys_update_name>sys_metadata_link_7caef54e37582300b3ac079754990e2e</sys_update_name>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-09-03 19:12:59</sys_updated_on>
+        <tablename>sn_sec_cmn_sightings_search_config</tablename>
+    </sys_metadata_link>
+</record_update>

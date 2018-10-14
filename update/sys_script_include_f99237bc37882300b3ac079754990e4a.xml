@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_universal_dg.threatLookUp</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>threatLookUp</name>
+        <script><![CDATA[var threatLookUp = Class.create();
+threatLookUp.prototype = {
+	initialize: function(implementationId, domainId) {
+		if (gs.nil(implementationId))
+			gs.error(gs.getMessage("[UDG] 'threatLookUp' script-include needs to be initialized with an implementation ID"));
+		
+		//Look up the capability.
+		var intId = null;
+		var gr = new GlideRecord('sn_sec_cmn_integration_capability_implementation');
+		gr.addActiveQuery();
+		gr.addQuery('sys_id', implementationId);
+		gr.query();
+		if (gr.next())
+			intId = gr.getValue('integration');
+		
+		if (gs.nil(intId))
+			gs.error(gs.getMessage("[UDG] 'threatLookUp' script-include needs to be initialized with an integration ID"));
+		
+		this._INTEGRATION_ID = intId;
+		//Load up the configurations.
+		var configs = new GlideRecord("sn_sec_core_integration_item_config");
+		configs.addQuery("integration", this._INTEGRATION_ID);
+		configs.query();
+		this.config = {
+			
+		};
+		
+		while (configs.next()) {
+			this.config[configs.getValue("name")] = configs.getValue("value");
+			
+			if (configs.getValue("elem_type").toLowerCase() == "password" && !gs.nil(configs.password_value))
+				this.config[configs.getValue("name")] = configs.password_value.getDecryptedValue();
+			
+			if (configs.getValue("elem_type") == "boolean")
+				this.config[configs.getValue("name")]= configs.getValue("value") == "true";
+		}
+		
+		if (!gs.nil(domainId))
+			this._DOMAIN_ID = domainId;
+	},
+	
+	enrichObservable: function(observableIds, taskId, executionId) {
+		var observableArray = observableIds.split(",");
+		for (var i in observableArray){
+			var observable = {
+			};
+			observable.sys_id = observableArray[i];
+			var observablesGr = new GlideRecord('sn_ti_observable');
+			observablesGr.get(observable.sys_id);
+			observable.value = "" + observablesGr.value;
+			observable.type = "" + observablesGr.type.sys_id;
+			this._createLookupResult(taskId, observable, executionId);
+		}
+		//return JSON.stringify(serviceResults);
+	},
+	
+	
+	
+	_createLookupResult: function(taskId, observable, executionId){
+		var conditionGr = new GlideRecord("x_snc_universal_dg_threat_lookup");
+		conditionGr.addQuery("observable_value",observable.value);
+		conditionGr.addQuery("active","true");
+		conditionGr.query();
+		if (conditionGr.getRowCount()==0){ //find condition (noththing found)
+			conditionGr.initialize();
+			conditionGr.addQuery("observable_value","");
+			conditionGr.addQuery("active","true");
+			conditionGr.query();
+			if (conditionGr.getRowCount()==0){ //find default condition (noththing found)
+				return null;
+			}
+		}
+		conditionGr.next();
+		if (conditionGr.getRowCount()>1){
+			gs.warn("[UDG] Warning multiple reponses are defined for single observable! Using: "+conditionGr.short_description);
+		}
+		
+		var gr = new GlideRecord('sn_ti_lookup_result');
+		gr.initialize();
+		gr.setValue('observable', observable.sys_id);
+		gr.setValue('source_engine', conditionGr.source_engine);
+		gr.setValue('source_engine_version', conditionGr.source_engine_version);
+		gr.setValue('vendor', conditionGr.sn_sec_core_integration_item);
+		gr.setValue('sys_domain', this._DOMAIN_ID);
+		
+		//if (/^[0-9.:a-fA-F]*$/.test(observable.value))
+		if (conditionGr.external_link==""){
+			gr.setValue('external_link',gs.getProperty('glide.servlet.uri')+"x_snc_universal_dg_threatlookup.do?threat="+conditionGr.sys_id+"&observable="+observable.sys_id);
+		}
+		else{
+			gr.setValue('external_link',conditionGr.external_link);
+		}
+		
+		if (conditionGr.finding=="Malicious") {
+			gr.setValue('finding', "Malicious");
+			gr.setValue("result",conditionGr.result);
+			gr.setValue("details",conditionGr.details);
+		} else {
+			gr.setValue('finding', "Unknown");
+			gr.setValue("result", "passed");
+		}
+		
+		if (!gs.nil(taskId)) {
+			gr.setValue('ref_table', 'sn_sec_cmn_integration_capability_execution');
+			gr.setValue('ref_id', executionId);
+		}
+		
+		gr.setValue('raw_data',conditionGr.raw_data );
+		gr.insert();
+		
+		
+	},
+	
+	type: 'threatLookUp'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-08-18 20:12:51</sys_created_on>
+        <sys_id>f99237bc37882300b3ac079754990e4a</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name>threatLookUp</sys_name>
+        <sys_package display_value="Universal Demo Generator" source="x_snc_universal_dg">c0b9f17c37042300b3ac079754990ee9</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Universal Demo Generator">c0b9f17c37042300b3ac079754990ee9</sys_scope>
+        <sys_update_name>sys_script_include_f99237bc37882300b3ac079754990e4a</sys_update_name>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-09-08 21:11:51</sys_updated_on>
+    </sys_script_include>
+</record_update>

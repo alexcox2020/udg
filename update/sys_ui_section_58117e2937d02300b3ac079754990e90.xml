@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Response" section_id="58117e2937d02300b3ac079754990e90" sys_domain="global" table="x_snc_universal_dg_get_running_processes" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>include_windows_processes</element>
+            <position>0</position>
+            <sys_created_by>martin.meduna</sys_created_by>
+            <sys_created_on>2018-09-02 09:38:32</sys_created_on>
+            <sys_id>5891766937d02300b3ac079754990ecf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Response" display_value="Response" name="x_snc_universal_dg_get_running_processes" sys_domain="global" view="Default view">58117e2937d02300b3ac079754990e90</sys_ui_section>
+            <sys_updated_by>martin.meduna</sys_updated_by>
+            <sys_updated_on>2018-09-02 09:38:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>include_unix_processes</element>
+            <position>1</position>
+            <sys_created_by>martin.meduna</sys_created_by>
+            <sys_created_on>2018-09-02 09:38:32</sys_created_on>
+            <sys_id>d891766937d02300b3ac079754990ecf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Response" display_value="Response" name="x_snc_universal_dg_get_running_processes" sys_domain="global" view="Default view">58117e2937d02300b3ac079754990e90</sys_ui_section>
+            <sys_updated_by>martin.meduna</sys_updated_by>
+            <sys_updated_on>2018-09-02 09:38:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>martin.meduna</sys_created_by>
+            <sys_created_on>2018-09-02 09:38:32</sys_created_on>
+            <sys_id>5c91766937d02300b3ac079754990ecf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Response" display_value="Response" name="x_snc_universal_dg_get_running_processes" sys_domain="global" view="Default view">58117e2937d02300b3ac079754990e90</sys_ui_section>
+            <sys_updated_by>martin.meduna</sys_updated_by>
+            <sys_updated_on>2018-09-02 09:38:32</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>3</position>
+            <sys_created_by>martin.meduna</sys_created_by>
+            <sys_created_on>2018-09-02 09:38:32</sys_created_on>
+            <sys_id>dc91766937d02300b3ac079754990ecf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Response" display_value="Response" name="x_snc_universal_dg_get_running_processes" sys_domain="global" view="Default view">58117e2937d02300b3ac079754990e90</sys_ui_section>
+            <sys_updated_by>martin.meduna</sys_updated_by>
+            <sys_updated_on>2018-09-02 09:38:32</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>response</element>
+            <position>4</position>
+            <sys_created_by>martin.meduna</sys_created_by>
+            <sys_created_on>2018-09-02 09:38:32</sys_created_on>
+            <sys_id>5091766937d02300b3ac079754990ed0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Response" display_value="Response" name="x_snc_universal_dg_get_running_processes" sys_domain="global" view="Default view">58117e2937d02300b3ac079754990e90</sys_ui_section>
+            <sys_updated_by>martin.meduna</sys_updated_by>
+            <sys_updated_on>2018-09-02 09:38:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Response</caption>
+            <header>false</header>
+            <name>x_snc_universal_dg_get_running_processes</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>martin.meduna</sys_created_by>
+            <sys_created_on>2018-09-02 09:36:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>58117e2937d02300b3ac079754990e90</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Response</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Universal Demo Generator" source="x_snc_universal_dg">c0b9f17c37042300b3ac079754990ee9</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Universal Demo Generator">c0b9f17c37042300b3ac079754990ee9</sys_scope>
+            <sys_update_name>sys_ui_section_58117e2937d02300b3ac079754990e90</sys_update_name>
+            <sys_updated_by>martin.meduna</sys_updated_by>
+            <sys_updated_on>2018-09-02 09:36:21</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>sys_popup,run_script</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-09-02 13:23:20</sys_created_on>
+        <sys_id>d905672537942300b3ac079754990e8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sys_popup,run_script</sys_name>
+        <sys_package display_value="Universal Demo Generator" source="x_snc_universal_dg">c0b9f17c37042300b3ac079754990ee9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Universal Demo Generator">c0b9f17c37042300b3ac079754990ee9</sys_scope>
+        <sys_update_name>sys_ui_view_d905672537942300b3ac079754990e8b</sys_update_name>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-09-02 13:23:20</sys_updated_on>
+        <title>Sys_popup,run_script</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

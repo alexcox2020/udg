@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>bf81acf537582300b3ac079754990e4e</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_universal_dg_properties">
+    <x_snc_universal_dg_properties action="INSERT_OR_UPDATE">
+        <property_name>default_windows_processes</property_name>
+        <property_value>[&#13;
+{"command_line":"C:\\Windows\\System32\\RuntimeBroker.exe -Embedding","name":"RuntimeBroker.exe","path":"C:\\Windows\\System32\\RuntimeBroker.exe","pid":"2416","owner_sid":"500","owner":"Administrator"},&#13;
+  {"command_line":"sihost.exe","name":"sihost.exe","path":"C:\\Windows\\system32\\sihost.exe","pid":"1128","owner_sid":"500","owner":"Administrator"},&#13;
+  {"command_line":"C:\\Windows\\system32\\svchost.exe -k UnistackSvcGroup","name":"svchost.exe","path":"C:\\Windows\\system32\\svchost.exe","pid":"536","owner_sid":"500","owner":"Administrator"},&#13;
+  {"command_line":"taskhostw.exe {222A245B-E637-4AE9-A93F-A59CA119A75E}","name":"taskhostw.exe","path":"C:\\Windows\\system32\\taskhostw.exe","pid":"3108","owner_sid":"500","owner":"Administrator"},&#13;
+  {"command_line":"C:\\Windows\\Explorer.EXE","name":"explorer.exe","path":"C:\\Windows\\Explorer.EXE","pid":"3392","owner_sid":"500","owner":"Administrator"},&#13;
+  {"command_line":"TPAutoConnect.exe -q -i vmware -a COM1 -F 30","name":"TPAutoConnect.exe","path":"C:\\Program Files\\VMware\\VMware Tools\\TPAutoConnect.exe","pid":"3632","owner_sid":"500","owner":"Administrator"},&#13;
+  {"command_line":"\\??\\C:\\Windows\\system32\\conhost.exe 0x4","name":"conhost.exe","path":"C:\\Windows\\system32\\conhost.exe","pid":"3640","owner_sid":"500","owner":"Administrator"},&#13;
+  {"command_line":"\"C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe\" -ServerName:App.AppXtk181tbxbce2qsex02s8tw7hfxa9xb3t.mca","name":"ShellExperienceHost.exe","path":"C:\\Windows\\SystemApps\\ShellExperienceHost_cw5n1h2txyewy\\ShellExperienceHost.exe","pid":"3680","owner_sid":"500","owner":"Administrator"},&#13;
+  {"command_line":"\"C:\\Windows\\SystemApps\\Microsoft.Windows.Cortana_cw5n1h2txyewy\\SearchUI.exe\" -ServerName:CortanaUI.AppXa50dqqa5gqv4a428c9y1jjw7m3btvepj.mca","name":"SearchUI.exe","path":"C:\\Windows\\SystemApps\\Microsoft.Windows.Cortana_cw5n1h2txyewy\\SearchUI.exe","pid":"3772","owner_sid":"500","owner":"Administrator"},&#13;
+  {"command_line":"\"C:\\Windows\\system32\\ServerManager.exe\" ","name":"ServerManager.exe","path":"C:\\Windows\\system32\\ServerManager.exe","pid":"3100","owner_sid":"500","owner":"Administrator"},&#13;
+  {"command_line":"\"C:\\Windows\\system32\\cmd.exe\" ","name":"cmd.exe","path":"C:\\Windows\\system32\\cmd.exe","pid":"4264","owner_sid":"500","owner":"Administrator"},&#13;
+  {"command_line":"\\??\\C:\\Windows\\system32\\conhost.exe 0x4","name":"conhost.exe","path":"C:\\Windows\\system32\\conhost.exe","pid":"4276","owner_sid":"500","owner":"Administrator"},&#13;
+  {"command_line":"\"C:\\Program Files\\VMware\\VMware Tools\\vmtoolsd.exe\" -n vmusr","name":"vmtoolsd.exe","path":"C:\\Program Files\\VMware\\VMware Tools\\vmtoolsd.exe","pid":"4536","owner_sid":"500","owner":"Administrator"},&#13;
+  {"command_line":"osqueryi  --json \"SELECT processes.pid, processes.name, processes.path, processes.command_line, processes.owner_sid, users.owner FROM processes JOIN users ON users.owner_sid=processes.owner_sid;\" ","name":"osqueryi.exe","path":"c:\\ProgramData\\osquery\\osqueryi.exe","pid":"3512","owner_sid":"500","owner":"Administrator"}&#13;
+]</property_value>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-09-02 17:48:29</sys_created_on>
+        <sys_id>bf81acf537582300b3ac079754990e4e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-09-02 17:48:47</sys_updated_on>
+    </x_snc_universal_dg_properties>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>martin.meduna</sys_created_by>
+        <sys_created_on>2018-09-03 18:54:36</sys_created_on>
+        <sys_id>e76af14a37582300b3ac079754990e03</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2018-09-02 18:48:29</sys_name>
+        <sys_package display_value="Universal Demo Generator" source="x_snc_universal_dg">c0b9f17c37042300b3ac079754990ee9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Universal Demo Generator">c0b9f17c37042300b3ac079754990ee9</sys_scope>
+        <sys_update_name>sys_metadata_link_e76af14a37582300b3ac079754990e03</sys_update_name>
+        <sys_updated_by>martin.meduna</sys_updated_by>
+        <sys_updated_on>2018-09-03 18:54:36</sys_updated_on>
+        <tablename>x_snc_universal_dg_properties</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_sec_cmn_integration_capability_implementation">
+    <sn_sec_cmn_integration_capability_implementation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <capability display_value="Email Search and Delete">b5aea3d70bc332008f9108e3c5673ac8</capability>
+        <firewall/>
+        <integration display_value="Universal Demo Generator">3eea797037442300b3ac079754990e89</integration>
+        <maximum_concurrent_requests>1</maximum_concurrent_requests>
+        <name>Universal Demo Generator</name>
+        <order>100</order>
+        <sys_class_name>sn_sec_cmn_integration_capability_implementation</sys_class_name>
+        <sys_created_by>alex.cox</sys_created_by>
+        <sys_created_on>2018-08-20 17:46:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>4484616d37882300b3ac079754990ef9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Universal Demo Generator</sys_name>
+        <sys_package display_value="Universal Demo Generator" source="x_snc_universal_dg">c0b9f17c37042300b3ac079754990ee9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Universal Demo Generator">c0b9f17c37042300b3ac079754990ee9</sys_scope>
+        <sys_update_name>sn_sec_cmn_integration_capability_implementation_4484616d37882300b3ac079754990ef9</sys_update_name>
+        <sys_updated_by>alex.cox</sys_updated_by>
+        <sys_updated_on>2018-08-20 18:56:09</sys_updated_on>
+        <workflow display_value="UDG - Perform Email Search and Deletion">246f552937882300b3ac079754990ecf</workflow>
+    </sn_sec_cmn_integration_capability_implementation>
+</record_update>

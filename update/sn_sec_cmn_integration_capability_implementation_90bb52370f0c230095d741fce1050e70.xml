@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_sec_cmn_integration_capability_implementation">
+    <sn_sec_cmn_integration_capability_implementation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <capability display_value="Isolate Host">ec428535ff203200c68c84648e94fae9</capability>
+        <firewall/>
+        <integration display_value="Universal Demo Generator">3eea797037442300b3ac079754990e89</integration>
+        <maximum_concurrent_requests>1</maximum_concurrent_requests>
+        <name>Universal Demo Generator</name>
+        <order>100</order>
+        <sys_class_name>sn_sec_cmn_integration_capability_implementation</sys_class_name>
+        <sys_created_by>alex.cox</sys_created_by>
+        <sys_created_on>2018-08-27 21:33:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>90bb52370f0c230095d741fce1050e70</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Universal Demo Generator</sys_name>
+        <sys_package display_value="Universal Demo Generator" source="x_snc_universal_dg">c0b9f17c37042300b3ac079754990ee9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Universal Demo Generator">c0b9f17c37042300b3ac079754990ee9</sys_scope>
+        <sys_update_name>sn_sec_cmn_integration_capability_implementation_90bb52370f0c230095d741fce1050e70</sys_update_name>
+        <sys_updated_by>alex.cox</sys_updated_by>
+        <sys_updated_on>2018-08-27 21:56:56</sys_updated_on>
+        <workflow display_value="UDG - Isolate Host">f62c5e370f0c230095d741fce1050e70</workflow>
+    </sn_sec_cmn_integration_capability_implementation>
+</record_update>

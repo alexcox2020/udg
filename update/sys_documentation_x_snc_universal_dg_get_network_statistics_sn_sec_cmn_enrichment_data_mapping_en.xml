@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="sn_sec_cmn_enrichment_data_mapping" label="Enrichment Data Mapping" language="en" table="x_snc_universal_dg_get_network_statistics">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>sn_sec_cmn_enrichment_data_mapping</element>
+            <help/>
+            <hint/>
+            <label>Enrichment Data Mapping</label>
+            <language>en</language>
+            <name>x_snc_universal_dg_get_network_statistics</name>
+            <plural>Enrichment Data Mappings</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>martin.meduna</sys_created_by>
+            <sys_created_on>2018-09-02 20:48:47</sys_created_on>
+            <sys_id>62fa457937d82300b3ac079754990ebe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Enrichment Data Mapping</sys_name>
+            <sys_package display_value="Universal Demo Generator" source="x_snc_universal_dg">c0b9f17c37042300b3ac079754990ee9</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Universal Demo Generator">c0b9f17c37042300b3ac079754990ee9</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_universal_dg_get_network_statistics_sn_sec_cmn_enrichment_data_mapping_en</sys_update_name>
+            <sys_updated_by>martin.meduna</sys_updated_by>
+            <sys_updated_on>2018-09-02 20:48:47</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

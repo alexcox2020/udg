@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Sighting search" max_length="40" name="x_snc_universal_dg_sighting_search" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Link URL" max_length="1024" name="link_url" type="url"/>
+        <element label="Observable value" max_length="256" name="observable_value" type="string"/>
+        <element label="Raw data" max_length="8000" name="raw_data" type="string"/>
+        <element label="Short description" max_length="128" name="short_description" type="string"/>
+        <element label="Sightings over time" max_length="8000" name="sightings_over_time" type="string"/>
+        <element label="Sighting count" max_length="40" name="sighting_count" type="integer"/>
+        <element label="Sighting search query" max_length="8000" name="sighting_search_query" type="string"/>
+        <element default="9ed9f28d0f04230095d741fce1050e47" label="Sightings Search Configuration" max_length="32" name="sn_sec_cmn_sightings_search_config" reference="sn_sec_cmn_sightings_search_config" type="reference"/>
+        <element default="Universal Demo Generator" label="Source" max_length="40" name="source" type="string"/>
+    </element>
+</database>
