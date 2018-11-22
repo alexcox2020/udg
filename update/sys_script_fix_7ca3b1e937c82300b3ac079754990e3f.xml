@@ -7,21 +7,25 @@
         <name>Sighting search test</name>
         <record_for_rollback>false</record_for_rollback>
         <run_once>true</run_once>
-        <script><![CDATA[var observables='[{"value":"http://107.179.62.12/","type":"ec9d47809f81120035c6786f957fcfa7"},{"value":"http://www.medvidekpu.com","type":"ec9d47809f81120035c6786f957fcfa7"}]';
-var edu = new enrichmentDemoUtils();
-gs.info("[UDG] Info: "+edu.sightingsSearch(observables));]]></script>
+        <script><![CDATA[var sis= new sightingSearch();
+for (var i=0; i<3; i++)
+	{
+	sis.createLogRecord("ip_url_template","http://vopice.co.uk");	
+	//gs.info("MM IP: "+sis.getRandomRFC1819());
+	//gs.info("MM IP: "+Math.floor(Math.random() * 3));
+}]]></script>
         <sys_class_name>sys_script_fix</sys_class_name>
         <sys_created_by>martin.meduna</sys_created_by>
         <sys_created_on>2018-08-20 18:52:16</sys_created_on>
         <sys_id>7ca3b1e937c82300b3ac079754990e3f</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Sighting search test</sys_name>
         <sys_package display_value="Universal Demo Generator" source="x_snc_universal_dg">c0b9f17c37042300b3ac079754990ee9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Universal Demo Generator">c0b9f17c37042300b3ac079754990ee9</sys_scope>
         <sys_update_name>sys_script_fix_7ca3b1e937c82300b3ac079754990e3f</sys_update_name>
         <sys_updated_by>martin.meduna</sys_updated_by>
-        <sys_updated_on>2018-08-21 14:51:24</sys_updated_on>
+        <sys_updated_on>2018-09-09 12:33:19</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
 </record_update>

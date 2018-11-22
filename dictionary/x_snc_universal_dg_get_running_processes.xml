@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Get Running Processes" max_length="40" name="x_snc_universal_dg_get_running_processes" type="collection">
-        <element attributes="edge_encryption_enabled=true" default="true" label="Active" max_length="40" name="active" type="boolean"/>
-        <element attributes="edge_encryption_enabled=true" label="Affected CI" max_length="32" name="affected_ci" reference="cmdb" type="reference"/>
-        <element attributes="edge_encryption_enabled=true" label="Include unix processes" max_length="40" name="include_unix_processes" type="boolean"/>
-        <element attributes="edge_encryption_enabled=true" label="Include windows processes" max_length="40" name="include_windows_processes" type="boolean"/>
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Affected CI" max_length="32" name="affected_ci" reference="cmdb" type="reference"/>
+        <element label="Include unix processes" max_length="40" name="include_unix_processes" type="boolean"/>
+        <element label="Include windows processes" max_length="40" name="include_windows_processes" type="boolean"/>
         <element label="Response" max_length="8000" name="response" type="string"/>
         <element label="Short description" max_length="128" name="short_description" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Enrichment Data Mapping" max_length="32" name="sn_sec_cmn_enrichment_data_mapping" reference="sn_sec_cmn_enrichment_data_mapping" type="reference"/>
+        <element label="Enrichment Data Mapping" max_length="32" name="sn_sec_cmn_enrichment_data_mapping" reference="sn_sec_cmn_enrichment_data_mapping" type="reference"/>
         <index name="index">
             <element name="affected_ci"/>
         </index>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Threat Lookup" max_length="40" name="x_snc_universal_dg_threat_lookup" type="collection">
-        <element attributes="edge_encryption_enabled=true" default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element label="Details" max_length="5000" name="details" type="string"/>
         <element label="External link" max_length="1024" name="external_link" type="url"/>
         <element label="Finding" max_length="32" name="finding" type="string"/>
@@ -8,8 +8,8 @@
         <element label="Raw data" max_length="8000" name="raw_data" type="string"/>
         <element label="Result value" max_length="500" name="result" type="string"/>
         <element label="Short description" max_length="128" name="short_description" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Integration vendor" max_length="32" name="sn_sec_core_integration_item" reference="sn_sec_core_integration_item" type="reference"/>
-        <element attributes="edge_encryption_enabled=true" label="Observable" max_length="32" name="sn_ti_observable" reference="sn_ti_observable" type="reference"/>
+        <element label="Integration vendor" max_length="32" name="sn_sec_core_integration_item" reference="sn_sec_core_integration_item" type="reference"/>
+        <element label="Observable" max_length="32" name="sn_ti_observable" reference="sn_ti_observable" type="reference"/>
         <element label="Source engine" max_length="128" name="source_engine" type="string"/>
         <element label="Engine version" max_length="40" name="source_engine_version" type="string"/>
         <index name="index">

@@ -19,8 +19,6 @@
         <query/>
         <report/>
         <roles>x_snc_universal_dg.properties_user</roles>
-        <survey/>
-        <survey_overwrite>false</survey_overwrite>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>martin.meduna</sys_created_by>
         <sys_created_on>2018-08-18 12:52:38</sys_created_on>

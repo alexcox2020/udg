@@ -93,7 +93,13 @@ threatLookUp.prototype = {
 		gr.setValue('sys_domain', this._DOMAIN_ID);
 		
 		//if (/^[0-9.:a-fA-F]*$/.test(observable.value))
-		gr.setValue('external_link',conditionGr.external_link);
+		if (conditionGr.external_link==""){
+			gr.setValue('external_link',gs.getProperty('glide.servlet.uri')+"x_snc_universal_dg_threatlookup.do?threat="+conditionGr.sys_id+"&observable="+observable.sys_id);
+		}
+		else{
+			gr.setValue('external_link',conditionGr.external_link);
+		}
+		
 		if (conditionGr.finding=="Malicious") {
 			gr.setValue('finding', "Malicious");
 			gr.setValue("result",conditionGr.result);
@@ -120,13 +126,13 @@ threatLookUp.prototype = {
         <sys_created_by>martin.meduna</sys_created_by>
         <sys_created_on>2018-08-18 20:12:51</sys_created_on>
         <sys_id>f99237bc37882300b3ac079754990e4a</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name>threatLookUp</sys_name>
         <sys_package display_value="Universal Demo Generator" source="x_snc_universal_dg">c0b9f17c37042300b3ac079754990ee9</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Universal Demo Generator">c0b9f17c37042300b3ac079754990ee9</sys_scope>
         <sys_update_name>sys_script_include_f99237bc37882300b3ac079754990e4a</sys_update_name>
         <sys_updated_by>martin.meduna</sys_updated_by>
-        <sys_updated_on>2018-09-05 11:53:15</sys_updated_on>
+        <sys_updated_on>2018-09-08 21:11:51</sys_updated_on>
     </sys_script_include>
 </record_update>
