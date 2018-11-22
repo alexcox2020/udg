@@ -19,6 +19,8 @@
         <query/>
         <report/>
         <roles>x_snc_universal_dg.get_network_statistics_user</roles>
+        <survey/>
+        <survey_overwrite>false</survey_overwrite>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>martin.meduna</sys_created_by>
         <sys_created_on>2018-09-02 20:42:16</sys_created_on>

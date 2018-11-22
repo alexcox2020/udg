@@ -4,7 +4,7 @@
         <attributes/>
         <base_provider display_value="Run Script">d0c7fe11eb013100fc5e8a7af106fee0</base_provider>
         <category/>
-        <checked_out_by display_value="Alex Cox">b49a2d90db3613004944f2b6ae96192d</checked_out_by>
+        <checked_out_by display_value="">b49a2d90db3613004944f2b6ae96192d</checked_out_by>
         <default_height/>
         <default_width/>
         <description/>
@@ -66,7 +66,7 @@ activityOutput.filtered_observables = JSON.stringify(observablesJson);
     <sys_translated_text action="delete_multiple" query="documentkey=feabefe937806300b3ac079754990eac"/>
     <wf_versionable action="INSERT_OR_UPDATE">
         <checked_out>2018-08-21 03:36:41</checked_out>
-        <checked_out_by display_value="Alex Cox">b49a2d90db3613004944f2b6ae96192d</checked_out_by>
+        <checked_out_by display_value="">b49a2d90db3613004944f2b6ae96192d</checked_out_by>
         <published>false</published>
         <sys_created_by>alex.cox</sys_created_by>
         <sys_created_on>2018-08-21 03:36:41</sys_created_on>

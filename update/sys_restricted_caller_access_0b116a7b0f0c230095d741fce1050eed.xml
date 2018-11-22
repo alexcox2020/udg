@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_restricted_caller_access">
+    <sys_restricted_caller_access action="INSERT_OR_UPDATE">
+        <operation>read</operation>
+        <source>b50adfcbb3200300743cc9c316a8dc8c</source>
+        <source_scope display_value="SecOps UI">265854e40b233200b97c67d985673a3f</source_scope>
+        <source_table>sys_script_include</source_table>
+        <source_type>2</source_type>
+        <status>2</status>
+        <sys_class_name>sys_restricted_caller_access</sys_class_name>
+        <sys_created_by>alex.cox</sys_created_by>
+        <sys_created_on>2018-08-27 21:57:16</sys_created_on>
+        <sys_id>0b116a7b0f0c230095d741fce1050eed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>265854e40b233200b97c67d985673a3f</sys_name>
+        <sys_package display_value="Security Incident" source="sn_si">82878663ff123100158bffffffffff67</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Universal Demo Generator">c0b9f17c37042300b3ac079754990ee9</sys_scope>
+        <sys_update_name>sys_restricted_caller_access_0b116a7b0f0c230095d741fce1050eed</sys_update_name>
+        <sys_updated_by>alex.cox</sys_updated_by>
+        <sys_updated_on>2018-08-27 21:57:16</sys_updated_on>
+        <target name="sn_si_incident" target_table="sys_db_object">773047bddb94a30013ec26494896195c</target>
+        <target_scope display_value="Security Incident">82878663ff123100158bffffffffff67</target_scope>
+        <target_table>sys_db_object</target_table>
+        <target_type>1</target_type>
+    </sys_restricted_caller_access>
+</record_update>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Logs" max_length="40" name="x_snc_universal_dg_logs" type="collection">
-        <element label="Date" max_length="40" name="date" type="glide_date_time"/>
-        <element attributes="no_truncate=true" label="Message" max_length="1024" name="message" type="string"/>
-        <element label="Observable value" max_length="256" name="observable_value" type="string"/>
-    </element>
-</database>

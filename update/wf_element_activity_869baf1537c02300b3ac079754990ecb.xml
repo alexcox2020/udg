@@ -63,7 +63,7 @@ activityOutput.filtered_observables = JSON.stringify(observablesJson);
     <wf_versionable action="INSERT_OR_UPDATE">
         <checked_out/>
         <checked_out_by/>
-        <published>true</published>
+        <published>false</published>
         <sys_created_by>martin.meduna</sys_created_by>
         <sys_created_on>2018-08-20 08:58:21</sys_created_on>
         <sys_id>3cbbeb1537c02300b3ac079754990e98</sys_id>

@@ -4,22 +4,22 @@
         <license_condition/>
         <license_model>none</license_model>
         <license_roles/>
-        <name>x_snc_universal_dg_email_search</name>
+        <name>x_snc_universal_dg_threat_lookup</name>
         <op_delete>true</op_delete>
         <op_insert>true</op_insert>
         <op_update>true</op_update>
         <owner_condition/>
         <sys_class_name>ua_table_licensing_config</sys_class_name>
         <sys_created_by>martin.meduna</sys_created_by>
-        <sys_created_on>2018-09-09 17:57:35</sys_created_on>
-        <sys_id>bae6a8800f68230095d741fce1050e38</sys_id>
+        <sys_created_on>2018-09-02 21:29:57</sys_created_on>
+        <sys_id>a6bb35c6db5ce300e97187096896196a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_snc_universal_dg_email_search</sys_name>
+        <sys_name>x_snc_universal_dg_threat_lookup</sys_name>
         <sys_package display_value="Universal Demo Generator" source="x_snc_universal_dg">c0b9f17c37042300b3ac079754990ee9</sys_package>
         <sys_policy/>
         <sys_scope display_value="Universal Demo Generator">c0b9f17c37042300b3ac079754990ee9</sys_scope>
-        <sys_update_name>ua_table_licensing_config_bae6a8800f68230095d741fce1050e38</sys_update_name>
+        <sys_update_name>ua_table_licensing_config_a6bb35c6db5ce300e97187096896196a</sys_update_name>
         <sys_updated_by>martin.meduna</sys_updated_by>
-        <sys_updated_on>2018-09-09 17:57:35</sys_updated_on>
+        <sys_updated_on>2018-09-02 21:29:57</sys_updated_on>
     </ua_table_licensing_config>
 </record_update>

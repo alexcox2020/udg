@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="wf_workflow_version">
     <wf_workflow_version action="INSERT_OR_UPDATE">
         <active>true</active>
-        <activity_stages>{"stages":{},"activities":{},"subflows":[],"ends":["ab725b7137c82300b3ac079754990eaa"]}</activity_stages>
+        <activity_stages>{"ends":["ab725b7137c82300b3ac079754990eaa"],"activities":{},"stages":{},"subflows":[]}</activity_stages>
         <after_business_rules>false</after_business_rules>
         <checked_out/>
         <checked_out_by/>
@@ -31,9 +31,9 @@
         <sys_created_by>martin.meduna</sys_created_by>
         <sys_created_on>2018-08-21 20:25:11</sys_created_on>
         <sys_id>6f725b7137c82300b3ac079754990ea8</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_updated_by>martin.meduna</sys_updated_by>
-        <sys_updated_on>2018-09-12 12:17:10</sys_updated_on>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-09-03 09:40:07</sys_updated_on>
         <table>global</table>
         <timezone/>
         <validated>true</validated>
